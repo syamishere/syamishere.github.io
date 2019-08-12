@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/Details.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="manifest" href="/manifest.json">
+        <meta name ="theme-color" content="#ffe600">
+        <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+    </head>
+    <body>
+         <div class="container">
+               <!-- responsive table -->
+               <div class="holder">
+                 <div class="responsiveTbl">
+                   <table>
+                     <thead>
+                       <tr>
+                         <th>Workspace</th>
+                         <th>Date</th>
+                         <th>Action</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>1.194,First floor,kinfra,TVC</td>
+                         <td>Jan 01 - Jan 14</td>
+                         <td><a href="#" class="btn">Extend</span></td>
+                       </tr>
+                       <tr>
+                           <td>2.0900, Second Floor,Kinfra</td>
+                           <td>Dec 20 - Dec 28</td>
+                           <td><a href="#" class="btn">Book</span></td>
+                       </tr>
+                       <tr>
+                           <td>1.0800,Thejaswini</td>
+                           <td>Nov 01 - Nov 10</td>
+                           <td><a href="#" class="btn">Book</span></td>
+                       </tr>
+
+                     </tbody>
+                   </table>
+                 </div>
+           
+                           </div>
+                        </div>
+                  <!-- <span class="page__name">Reservation Details</span> -->
+                </div>
+                <div class="menu">
+                  <nav class="menu__nav">
+                    <ul class="r-list menu__list">
+                      <li class="menu__group">
+                        <a href="MSTimeline.html" class="r-link menu__link">Home</a>
+                      </li>
+                      <li class="menu__group">
+                        <a href="MSTimeline.html" class="r-link menu__link">Scan QR</a>
+                      </li>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="menu__toggle">
+                    <button class="r-button menu__hamburger">
+                      <span class="m-hamburger">
+                        <span class="m-hamburger__label">Open menu</span>
+                      </span>
+                    </button>
+                  </div>  
+                </div>
+    </body>
+
+    <script>
+(function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+    }
+    
+    toggleMenuState(className) {      
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for toggleState function');
+      } 
+      return  this.menuNode.classList.toggle(className);
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+  
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__hamburger').addEventListener('click', callMenuToggle);
+})();
+    </script>
+</html>
