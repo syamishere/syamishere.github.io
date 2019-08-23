@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>         
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>         
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]><!--> 
+         <html class="no-js">
+            <!--<![endif]-->
+            <head>
+               <meta charset="utf-8">
+               <meta http-equiv="X-UA-Compatible" content="IE=edge">
+               <title></title>
+               <meta name="description" content="">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link rel="stylesheet" type="text/css" href="css/DetailsNew.css" />
+               <script type="text/javascript" src="js/main.js"></script>
+               <link rel="manifest" href="manifest.json">
+               <meta name ="theme-color" content="#ffe600">
+               <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+            </head>
+            <body>
+               <header>
+                  <div class="container" style="float: left">
+                     <h1 class="logo">
+                        <span>Reserve</span>
+                     </h1>
+                  </div>
+               </header>
+               <div class="container">
+                  <div id="timeline">
+                     <p style="color:rgb(255, 255, 255);font-size:14px;"> Current Reservation</p>
+                     <div class="timeline-item">
+                        <div class="timeline-content-current">
+                           <!-- <h2 style="color:rgb(255, 255, 255);font-size:18px;">Current Reservation</h2> -->
+                           <p style="color:rgb(255, 255, 255);font-size:medium;">01.058Q, First floor, KINFRA - TVC</p>
+                           <p style="color:rgb(255, 255, 255);font-size:medium;">Aug 01 , 2019 - Aug 14 , 2019</p>
+                           <div style="height: 50px">
+                              <a href="#ExtndPopup" style=" margin: 5px 5px;"class="Greenbtn">Extend</a>
+                              <a href="#"  style=" margin: 5px 5px;" class="Redbtn">Cancel</a>
+                           </div>
+                        </div>
+                     </div>
+                     <p style="color:rgb(255, 255, 255);font-size:14px;"> Historic Reservation</p>
+                     <div class="timeline-item">
+                        <div class="timeline-content">
+                           <!-- <h2>Reservation History</h2> -->
+                           <p style="color:rgb(255, 255, 255);font-size:medium;">01.678Q, RMZ, Bangalore</p>
+                           <p style="color:rgb(255, 255, 254);font-size:medium;">Jul 12, 2019 - Jul 31 , 2019</p>
+                           <div style="height: 50px">
+                              <a href="" style=" margin: 5px 5px;"class="Greenbtn">Book</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="ExtndPopup" class="overlay">
+                        <div class="popup">
+                           <h2></h2>
+                           <p style="color:rgb(118, 118, 117);font-size:18px;">This will extend your current reservation to the next 14 days.
+                              <br></br>
+                           </p>
+                           <p style="color:rgb(7, 162, 90);font-size:18px;">Jan 15,2019 - Feb 01,2019
+                              <br></br>
+                           </p>
+                           <a class="close" href="#">×</a>
+                           <div class="content"></div>
+                        </div>
+                     </div>
+                     <a href="#NewPopUp" class="floatbtn">
+                        <i class="fa fa-plus my-float"></i>
+                        <p style="color:rgb(0, 0, 0);font-size:30px; text-align: center; padding: 18px;">+</p>
+                     </a>
+                     <div id="NewPopUp" class="overlay">
+                        <div class="popup">
+                           <h2 style="color:rgb(7, 162, 90);font-size:18px;">New Booking</h2>
+                           <div class="row">
+                              <div class="col-25">
+                                 <label for="loc">Location</label>
+                              </div>
+                              <div class="col-75">
+                                 <select id="location" name="location">
+                                    <option value="TVM">TRIVANDRUM</option>
+                                    <option value="KOC">KOCHI</option>
+                                    <option value="BLR">BANGALORE</option>
+                                    <option value="Ggn">GURUGRAM</option>
+                                 </select>
+                              </div>
+                              <label for="St_Date">Start Date : </label><input id="St_Date" type="date" value="2011-01-13"/>
+                           </div>
+                           <input type="submit" value="Submit">
+                           <a class="close" href="#">×</a>
+                        </div>
+                     </div>
+                     <div class="timeline-item">
+                        <div class="timeline-icon">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <script></script>
+            </body>
+         </html>
